@@ -1,0 +1,1 @@
+# Mathematical Abilities GWAS EasyQC and METAL code
