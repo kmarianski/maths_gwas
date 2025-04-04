@@ -1,0 +1,40 @@
+# === GENERIC SETTINGS of input files === #
+# Using cohorts with EAF > 0.05
+
+GENOMICCONTROL OFF
+SEPARATOR COMMA
+MARKER cptid
+ALLELE EFFECT_ALLELE OTHER_ALLELE
+FREQ EAF
+EFFECT BETA
+PVALUE PVAL 
+STDERR SE
+WEIGHT N
+STRAND STRAND
+USESTRAND ON
+AVERAGEFREQ ON
+MINMAXFREQ ON
+
+# === SETTINGS for the analysis === #
+SCHEME STDERR
+CUSTOMVARIABLE TotalSampleSize   # only when scheme stderr, otherwise Weight will be in the output file
+LABEL TotalSampleSize as N
+
+
+#  === PROCESS THE  INPUT FILES === #
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz
+PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/NCDS/EasyQC_check/CLEANED.NCDS_COMBINED_20240904.txt.gz
+
+# === ANALYSIS === #
+OUTFILE combined_metal_random
+ANALYZE RANDOM
