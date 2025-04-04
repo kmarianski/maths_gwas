@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Before running SEQpower, ensure you have the following installed:
+Before running EasyQC, ensure you have the following installed:
 - [Singularity](https://sylabs.io/singularity/)
 - SLURM (for job scheduling on HPC systems)
 
