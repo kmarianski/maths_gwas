@@ -77,31 +77,57 @@ This version released on 2011-03-25
 ## Created custom variable 'TotalSampleSize'
 ## Set header for 'TotalSampleSize' to 'N'
 ###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz'
-## Processed 5442404 markers ...
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NCDS/CLEANED.NCDS_COMBINED_20240904.txt.gz'
+## Processed 375210 markers ...
 
 ###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz'
+## Processed 5509784 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz'
+## WARNING: Bad alleles for marker '17:19414836', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '7:71690709', expecting 'a/t' found 'a/g'
+## Processed 5442402 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz'
+## WARNING: Bad alleles for marker '10:116492814', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '11:93984326', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '13:93503930', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '17:19414836', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '19:7976627', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '2:113291679', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '2:158628749', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '6:32433276', expecting 'c/g' found 'a/c'
+## WARNING: Bad alleles for marker '7:71690709', expecting 'a/t' found 'a/g'
 ## WARNING: Bad alleles for marker '9:83900572', expecting 'a/t' found 'a/c'
-## Processed 5458543 markers ...
+## Processed 5458535 markers ...
 
 ###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz'
 ## WARNING: Bad alleles for marker '10:3326594', expecting 'a/g' found 'c/g'
 ## WARNING: Bad alleles for marker '15:64789992', expecting 'a/g' found 'a/c'
 ## WARNING: Bad alleles for marker '17:63891601', expecting 'a/g' found 'a/t'
+## WARNING: Bad alleles for marker '19:7976627', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '6:31454887', expecting 'a/g' found 'a/t'
 ## WARNING: Bad alleles for marker '8:18332153', expecting 'a/t' found 'a/g'
-## Processed 5375844 markers ...
+## Processed 5375843 markers ...
 
 ###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz'
 ## WARNING: Bad alleles for marker '10:5758125', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '10:61346794', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '10:61351597', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '11:116155555', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '11:44391664', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '11:67560618', expecting 'a/t' found 'a/c'
 ## WARNING: Bad alleles for marker '11:76143472', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '12:71972339', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '13:93503930', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '15:59607120', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '15:89878377', expecting 'a/c' found 'a/t'
+## WARNING: Bad alleles for marker '19:7976627', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '1:56405400', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '3:112940311', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '4:128321832', expecting 'a/c' found 'a/g'
@@ -109,14 +135,10 @@ This version released on 2011-03-25
 ## WARNING: Bad alleles for marker '4:94844567', expecting 'a/g' found 'a/c'
 ## WARNING: Bad alleles for marker '5:156283586', expecting 'a/t' found 'a/c'
 ## WARNING: Bad alleles for marker '6:96164053', expecting 'a/c' found 'a/t'
-## Processed 5461162 markers ...
+## Processed 5461155 markers ...
 
 ###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz'
-## WARNING: Bad alleles for marker '10:116492814', expecting 'a/g' found 'a/c'
-## WARNING: Bad alleles for marker '10:61346794', expecting 'a/g' found 'a/t'
-## WARNING: Bad alleles for marker '10:61351597', expecting 'a/g' found 'a/c'
-## WARNING: Bad alleles for marker '11:67560618', expecting 'a/c' found 'a/t'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz'
 ## WARNING: Bad alleles for marker '12:3145541', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '13:48947469', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '14:32836522', expecting 'a/c' found 'a/t'
@@ -127,17 +149,21 @@ This version released on 2011-03-25
 ## WARNING: Bad alleles for marker '1:208079671', expecting 'a/g' found 'a/c'
 ## WARNING: Bad alleles for marker '1:80299020', expecting 'a/c' found 'a/t'
 ## WARNING: Bad alleles for marker '22:18571670', expecting 'a/g' found 'a/t'
-## WARNING: Bad alleles for marker '2:158628749', expecting 'a/g' found 'a/c'
 ## WARNING: Bad alleles for marker '2:241866928', expecting 'a/g' found 'a/t'
 ## WARNING: Bad alleles for marker '3:255395', expecting 'a/g' found 'c/g'
 ## WARNING: Bad alleles for marker '4:100058884', expecting 'a/g' found 'a/c'
 ## WARNING: Bad alleles for marker '4:81906200', expecting 'a/g' found 'a/t'
 ## WARNING: Bad alleles for marker '4:82525322', expecting 'a/g' found 'a/c'
-## WARNING: Allele names don't match previous occurences at 10 additional markers
-## Processed 5509986 markers ...
+## WARNING: Bad alleles for marker '5:10014459', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '5:142397456', expecting 'a/c' found 'a/t'
+## WARNING: Bad alleles for marker '5:27929174', expecting 'a/c' found 'a/t'
+## WARNING: Bad alleles for marker '6:45258193', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '7:118256506', expecting 'a/c' found 'c/g'
+## WARNING: Allele names don't match previous occurences at 4 additional markers
+## Processed 5509992 markers ...
 
 ###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz'
 ## WARNING: Bad alleles for marker '13:101966872', expecting 'a/t' found 'a/c'
 ## WARNING: Bad alleles for marker '1:56405400', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '4:190461386', expecting 'a/c' found 'a/g'
@@ -145,7 +171,7 @@ This version released on 2011-03-25
 ## Processed 4391708 markers ...
 
 ###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz'
 ## WARNING: Bad alleles for marker '9:137485204', expecting 'a/t' found 'a/g'
 ## WARNING: Bad alleles for marker '13:101966872', expecting 'a/t' found 'a/c'
 ## WARNING: Bad alleles for marker '4:190461386', expecting 'a/c' found 'a/g'
@@ -153,7 +179,7 @@ This version released on 2011-03-25
 ## Processed 4412511 markers ...
 
 ###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz'
 ## WARNING: Bad alleles for marker '10:132736750', expecting 'a/g' found 'a/c'
 ## WARNING: Bad alleles for marker '9:137485204', expecting 'a/t' found 'a/g'
 ## WARNING: Bad alleles for marker '13:101966872', expecting 'a/t' found 'a/c'
@@ -161,7 +187,7 @@ This version released on 2011-03-25
 ## Processed 4491566 markers ...
 
 ###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz'
 ## WARNING: Bad alleles for marker '10:125338315', expecting 'a/t' found 'a/c'
 ## WARNING: Bad alleles for marker '11:116155555', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '11:44391664', expecting 'a/t' found 'a/g'
@@ -173,20 +199,20 @@ This version released on 2011-03-25
 ## WARNING: Bad alleles for marker '12:133065711', expecting 'a/g' found 'a/c'
 ## WARNING: Bad alleles for marker '13:111509036', expecting 'a/c' found 'c/g'
 ## WARNING: Bad alleles for marker '13:89058104', expecting 'a/c' found 'c/g'
+## WARNING: Bad alleles for marker '13:93503930', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '15:56071325', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '17:75211870', expecting 'c/g' found 'a/c'
+## WARNING: Bad alleles for marker '19:7976627', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '1:56405400', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '21:46348700', expecting 'a/t' found 'a/c'
 ## WARNING: Bad alleles for marker '3:133386218', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '4:128321832', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '4:36799386', expecting 'a/t' found 'a/c'
-## WARNING: Bad alleles for marker '4:94844567', expecting 'a/g' found 'a/c'
-## WARNING: Bad alleles for marker '5:156283586', expecting 'a/t' found 'a/c'
-## WARNING: Bad alleles for marker '6:96164053', expecting 'a/c' found 'a/t'
-## WARNING: Allele names don't match previous occurences at 2 additional markers
-## Processed 5390126 markers ...
+## WARNING: Allele names don't match previous occurences at 6 additional markers
+## Processed 5390122 markers ...
 
 ###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz'
 ## WARNING: Bad alleles for marker '10:125338315', expecting 'a/t' found 'a/c'
 ## WARNING: Bad alleles for marker '10:1586258', expecting 'a/t' found 'a/c'
 ## WARNING: Bad alleles for marker '11:116155555', expecting 'a/c' found 'a/g'
@@ -199,6 +225,7 @@ This version released on 2011-03-25
 ## WARNING: Bad alleles for marker '12:25096701', expecting 'a/g' found 'a/c'
 ## WARNING: Bad alleles for marker '13:111509036', expecting 'a/c' found 'c/g'
 ## WARNING: Bad alleles for marker '13:89058104', expecting 'a/c' found 'c/g'
+## WARNING: Bad alleles for marker '15:56071325', expecting 'a/c' found 'a/g'
 ## WARNING: Bad alleles for marker '15:89878377', expecting 'a/c' found 'a/t'
 ## WARNING: Bad alleles for marker '17:75211870', expecting 'c/g' found 'a/c'
 ## WARNING: Bad alleles for marker '3:112940311', expecting 'a/c' found 'a/g'
@@ -206,69 +233,46 @@ This version released on 2011-03-25
 ## WARNING: Bad alleles for marker '4:182344142', expecting 'a/t' found 'a/g'
 ## WARNING: Bad alleles for marker '4:36799386', expecting 'a/t' found 'a/c'
 ## WARNING: Bad alleles for marker '4:94844567', expecting 'a/g' found 'a/c'
-## WARNING: Bad alleles for marker '5:156283586', expecting 'a/t' found 'a/c'
-## WARNING: Allele names don't match previous occurences at 2 additional markers
-## Processed 4984407 markers ...
+## WARNING: Allele names don't match previous occurences at 4 additional markers
+## Processed 4984405 markers ...
 
-###########################################################################
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz'
-## WARNING: Bad alleles for marker '10:116492814', expecting 'a/g' found 'a/c'
-## WARNING: Bad alleles for marker '10:61346794', expecting 'a/g' found 'a/t'
-## WARNING: Bad alleles for marker '10:61351597', expecting 'a/g' found 'a/c'
-## WARNING: Bad alleles for marker '11:67560618', expecting 'a/c' found 'a/t'
-## WARNING: Bad alleles for marker '11:93984326', expecting 'a/g' found 'a/t'
-## WARNING: Bad alleles for marker '12:71972339', expecting 'a/c' found 'a/t'
-## WARNING: Bad alleles for marker '13:93503930', expecting 'a/g' found 'a/t'
-## WARNING: Bad alleles for marker '15:56071325', expecting 'a/g' found 'a/c'
-## WARNING: Bad alleles for marker '15:59607120', expecting 'a/g' found 'a/c'
-## WARNING: Bad alleles for marker '17:19414836', expecting 'a/c' found 'a/g'
-## WARNING: Bad alleles for marker '19:7976627', expecting 'a/g' found 'a/c'
-## WARNING: Bad alleles for marker '2:113291679', expecting 'a/g' found 'c/g'
-## WARNING: Bad alleles for marker '2:158628749', expecting 'a/g' found 'a/c'
-## WARNING: Bad alleles for marker '7:71690709', expecting 'a/g' found 'a/t'
-## Processed 5509770 markers ...
-
-###########################################################################
-## Processing file '/home/kmarians/scratch/private/maths_gwas/NCDS/EasyQC_check/CLEANED.NCDS_COMBINED_20240904.txt.gz'
-## Processed 375211 markers ...
-
-## ERROR: The command you issued could not be processed ...
+## Set output file prefix and suffix to maths_gwas. and tbl ...
 ###########################################################################
 ## Running second pass analysis to evaluate heterogeneity...
-## Processing file '/home/kmarians/scratch/private/maths_gwas/NCDS/EasyQC_check/CLEANED.NCDS_COMBINED_20240904.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NCDS/CLEANED.NCDS_COMBINED_20240904.txt.gz'
 
 ###########################################################################
 ## Calculating tau-square...
 ###########################################################################
 ## Third pass to calculate DerSimonian-Laird statistics...
-## Processing file '/home/kmarians/scratch/private/maths_gwas/NCDS/EasyQC_check/CLEANED.NCDS_COMBINED_20240904.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz'
-## Processing file '/home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NCDS/CLEANED.NCDS_COMBINED_20240904.txt.gz'
 
 ###########################################################################
 ## Executing meta-analysis ...
-## Complete results will be stored in file 'METAANALYSIS1.TBL'
-## Column descriptions will be stored in file 'METAANALYSIS1.TBL.info'
+## Complete results will be stored in file 'maths_gwas.1tbl'
+## Column descriptions will be stored in file 'maths_gwas.1tbl.info'
 ## Completed meta-analysis for 6550791 markers!
 ## Smallest p-value is 7.589e-08 at marker '7:8296595'
 

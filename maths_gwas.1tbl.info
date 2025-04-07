@@ -1,0 +1,34 @@
+# This file contains a short description of the columns in the
+# meta-analysis summary file, named 'maths_gwas.1tbl'
+
+# Marker    - this is the marker name
+# Allele1   - the first allele for this marker in the first file where it occurs
+# Allele2   - the second allele for this marker in the first file where it occurs
+# Freq1       - weighted average of frequency for allele 1 across all studies
+# FreqSE      - corresponding standard error for allele frequency estimate
+# MinFreq     - minimum frequency for allele 1 across all studies
+# MaxFreq     - maximum frequency for allele 1 across all studies
+# Effect    - overall estimated effect size for allele1
+# StdErr    - overall standard error for effect size estimate
+# P-value   - meta-analysis p-value
+# Direction - summary of effect direction for each study, with one '+' or '-' per study
+# HetISq    - I^2 statistic which measures heterogeneity on scale of 0-100%
+# HetChiSq  - chi-squared statistic in simple test of heterogeneity
+# df        - degrees of freedom for heterogeneity statistic
+# HetPVal   - P-value for heterogeneity statistic
+# TotalSampleSize - custom variable 1
+
+# Input for this meta-analysis was stored in the files:
+# --> Input File 1 : /home/kmarians/scratch/private/maths_gwas/NCDS/CLEANED.NCDS_COMBINED_20240904.txt.gz
+# --> Input File 2 : /home/kmarians/scratch/private/maths_gwas/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz
+# --> Input File 3 : /home/kmarians/scratch/private/maths_gwas/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz
+# --> Input File 4 : /home/kmarians/scratch/private/maths_gwas/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz
+# --> Input File 5 : /home/kmarians/scratch/private/maths_gwas/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz
+# --> Input File 6 : /home/kmarians/scratch/private/maths_gwas/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz
+# --> Input File 7 : /home/kmarians/scratch/private/maths_gwas/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz
+# --> Input File 8 : /home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz
+# --> Input File 9 : /home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz
+# --> Input File 10 : /home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz
+# --> Input File 11 : /home/kmarians/scratch/private/maths_gwas/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz
+# --> Input File 12 : /home/kmarians/scratch/private/maths_gwas/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz
+

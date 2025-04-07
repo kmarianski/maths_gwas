@@ -22,19 +22,19 @@ LABEL TotalSampleSize as N
 
 
 #  === PROCESS THE  INPUT FILES === #
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz
-PROCESS /home/kmarians/projects/uosa/Silvia_Paracchini/GWAS_Math/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz
-PROCESS /home/kmarians/scratch/private/maths_gwas/NCDS/EasyQC_check/CLEANED.NCDS_COMBINED_20240904.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/NCDS/CLEANED.NCDS_COMBINED_20240904.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz
+PROCESS /home/kmarians/scratch/private/maths_gwas/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz
 
 # === ANALYSIS === #
-OUTFILE combined_metal_random
+OUTFILE maths_gwas. tbl
 ANALYZE RANDOM

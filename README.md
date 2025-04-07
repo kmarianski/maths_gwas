@@ -38,6 +38,8 @@ gunzip HRC.r1-1.GRCh37.wgs.mac5.sites.tab.gz
 5. **Start a Singularity container and run EasyQC**  
 This Singularity container starts in R
 ```bash
+singularity run --bind /home/kmarians:/home/kmarians,/mnt/shared:/mnt/shared easyqc_latest.sif
+
 library(EasyQC)
 ecf <- "~/scratch/private/maths_gwas/EasyQC_NCDS.ecf"
 EasyQC(ecf)
