@@ -16,7 +16,7 @@ cd maths_gwas
 
 2. **Create necessary directories**
 ```bash
-mkdir -p notebooks slurm-outputs
+mkdir -p notebooks slurm-outputs rg_results
 # mkdir -p NCDS/EasyQC_check
 ```
 

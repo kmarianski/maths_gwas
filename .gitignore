@@ -14,8 +14,11 @@ NCDS_COMBINED_20240904.txt
 /TORONTO/
 /YORK/
 /notebooks/
+/rg_results/
+/sumstats/
 HRC.r1-1.GRCh37.wgs.mac5.sites.tab
 HRC.r1-1.GRCh37.wgs.mac5.sites.tab.FOReasyQC
 HRC.r1-1.GRCh37.wgs.mac5.sites.tab.cptid.maf001
 HRC.r1-1.GRCh37.wgs.mac5.sites.tab.FOReasyQC.frq
 maths_gwas.1tbl
+metal.sumstats.ldsc.txt.gz
