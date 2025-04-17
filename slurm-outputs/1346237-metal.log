@@ -1,0 +1,288 @@
+MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+This version released on 2011-03-25
+
+# This program faciliates meta-analysis of genome-wide association studies.
+# Commonly used commands are listed below:
+#
+# Options for describing input files ...
+#   SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+#   COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+#   MARKERLABEL      [LABEL]                     (default = 'MARKER')
+#   ALLELELABELS     [LABEL1 LABEL2]             (default = 'ALLELE1','ALLELE2')
+#   EFFECTLABEL      [LABEL|log(LABEL)]          (default = 'EFFECT')
+#   FLIP
+#
+# Options for filtering input files ...
+#   ADDFILTER        [LABEL CONDITION VALUE]     (example = ADDFILTER N > 10)
+#                    (available conditions are <, >, <=, >=, =, !=, IN)
+#   REMOVEFILTERS
+#
+# Options for sample size weighted meta-analysis ...
+#   WEIGHTLABEL      [LABEL]                     (default = 'N')
+#   PVALUELABEL      [LABEL]                     (default = 'PVALUE')
+#   DEFAULTWEIGHT    [NUMBER]                    (default = 1.0)
+#   MINWEIGHT        [NUMBER]                    (default = 1.0)
+#
+# Options for inverse variance weighted meta-analysis ...
+#   STDERRLABEL      [LABEL]                     (default = 'STDERR')
+#   SCHEME           [SAMPLESIZE|STDERR]         (default = SAMPLESIZE)
+#
+# Options to enable tracking of allele frequencies ...
+#   AVERAGEFREQ      [ON|OFF]                    (default = OFF)
+#   MINMAXFREQ       [ON|OFF]                    (default = OFF)
+#   FREQLABEL        [LABEL]                     (default = 'FREQ')
+#
+# Options to enable tracking of user defined variables ...
+#   CUSTOMVARIABLE   [VARNAME]
+#   LABEL            [VARNAME] AS [HEADER]
+#
+# Options to enable explicit strand information ...
+#   USESTRAND        [ON|OFF]                    (default = OFF)
+#   STRANDLABEL      [LABEL]                     (default = 'STRAND')
+#
+# Automatic genomic control correction of input statistics ...
+#   GENOMICCONTROL   [ON|OFF|VALUE|LIST snps.txt](default = OFF)
+#
+# Options for general analysis control ...
+#   PROCESSFILE      [FILENAME]
+#   OUTFILE          [PREFIX SUFFIX]             (default = 'METAANALYSIS','.TBL')
+#   MAXWARNINGS      [NUMBER]                    (default = 20)
+#   VERBOSE          [ON|OFF]                    (default = 'OFF')
+#   LOGPVALUE        [ON|OFF]                    (default = 'OFF')
+#   ANALYZE          [HETEROGENEITY]
+#   CLEAR
+
+# Options for general run control ...
+#   SOURCE           [SCRIPTFILE]
+#   RETURN
+#   QUIT
+
+# Processing commands in metal_all.txt ...
+## Genomic control correction of input statistics disabled
+## Set column separator to COMMAS ...
+## Set marker header to cptid ...
+## Set allele headers to EFFECT_ALLELE and OTHER_ALLELE ...
+## Set frequency header to EAF ...
+## If you want frequencies to be averaged, issue the 'AVERAGEFREQ ON' command
+## Set effect header to BETA ...
+## Set p-value header to PVAL ...
+## Set standard error header to SE ...
+## Set weight header to N ...
+## Set strand header to STRAND ...
+## If you want strand information to be used, issue the 'USESTRAND ON' command
+## Strand flipping according to strand column enabled
+## Averaging of allele frequencies enabled
+## Tracking of extreme allele frequencies enabled
+## Meta-analysis will be based on effect sizes and their standard errors ...
+## Created custom variable 'TotalSampleSize'
+## Set header for 'TotalSampleSize' to 'N'
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NCDS/CLEANED.NCDS_COMBINED_20250410.txt.gz'
+## Processed 7526990 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz'
+## WARNING: Bad alleles for marker '18:76006254', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '7:109444181', expecting 'a/g' found 'a/c'
+## Processed 5509782 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz'
+## WARNING: Bad alleles for marker '10:3326594', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '15:64789992', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '17:19414836', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '7:71690709', expecting 'a/t' found 'a/g'
+## Processed 5442400 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz'
+## WARNING: Bad alleles for marker '10:116492814', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '11:93984326', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '13:93503930', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '17:19414836', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '19:7976627', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '2:113291679', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '2:158628749', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '6:32433276', expecting 'c/g' found 'a/c'
+## WARNING: Bad alleles for marker '7:71690709', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '8:18332153', expecting 'a/g' found 'a/t'
+## WARNING: Bad alleles for marker '9:83900572', expecting 'a/t' found 'a/c'
+## Processed 5458534 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz'
+## WARNING: Bad alleles for marker '17:63891601', expecting 'a/g' found 'a/t'
+## WARNING: Bad alleles for marker '18:76006254', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '19:7976627', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '6:31454887', expecting 'a/g' found 'a/t'
+## Processed 5375845 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz'
+## WARNING: Bad alleles for marker '10:1586258', expecting 'a/c' found 'a/t'
+## WARNING: Bad alleles for marker '10:3326594', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '10:35998046', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '10:5758125', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '10:61346794', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '10:61351597', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '11:116155555', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '11:44391664', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '11:67560618', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '11:76143472', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '12:71972339', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '13:113504413', expecting 'a/c' found 'c/g'
+## WARNING: Bad alleles for marker '13:93503930', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '14:32836522', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '15:59607120', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '15:64789992', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '15:89878377', expecting 'a/c' found 'a/t'
+## WARNING: Bad alleles for marker '16:81144488', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '17:72351761', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '19:7976627', expecting 'a/c' found 'a/g'
+## WARNING: Allele names don't match previous occurences at 10 additional markers
+## Processed 5461144 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz'
+## WARNING: Bad alleles for marker '12:3145541', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '13:48947469', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '14:61241111', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '15:100267197', expecting 'a/g' found 'a/t'
+## WARNING: Bad alleles for marker '15:53418498', expecting 'c/g' found 'a/c'
+## WARNING: Bad alleles for marker '18:63819315', expecting 'a/c' found 'c/g'
+## WARNING: Bad alleles for marker '1:208079671', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '1:80299020', expecting 'a/c' found 'a/t'
+## WARNING: Bad alleles for marker '22:18571670', expecting 'a/g' found 'a/t'
+## WARNING: Bad alleles for marker '2:241866928', expecting 'a/g' found 'a/t'
+## WARNING: Bad alleles for marker '3:255395', expecting 'a/g' found 'c/g'
+## WARNING: Bad alleles for marker '4:100058884', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '4:81906200', expecting 'a/g' found 'a/t'
+## WARNING: Bad alleles for marker '4:82525322', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '5:10014459', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '5:142397456', expecting 'a/c' found 'a/t'
+## WARNING: Bad alleles for marker '5:27929174', expecting 'a/c' found 'a/t'
+## WARNING: Bad alleles for marker '6:45258193', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '7:109444181', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '7:118256506', expecting 'a/c' found 'c/g'
+## WARNING: Allele names don't match previous occurences at 4 additional markers
+## Processed 5509992 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz'
+## WARNING: Bad alleles for marker '7:88845705', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '13:101966872', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '1:56405400', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '4:190461386', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '6:141750110', expecting 'a/c' found 'a/t'
+## Processed 4391707 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz'
+## WARNING: Bad alleles for marker '7:88845705', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '9:137485204', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '13:101966872', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '4:190461386', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '6:141750110', expecting 'a/c' found 'a/t'
+## Processed 4412510 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz'
+## WARNING: Bad alleles for marker '10:132736750', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '7:88845705', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '9:137485204', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '13:101966872', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '4:190461386', expecting 'a/c' found 'a/g'
+## Processed 4491565 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz'
+## WARNING: Bad alleles for marker '10:125338315', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '10:1586258', expecting 'a/c' found 'a/t'
+## WARNING: Bad alleles for marker '10:3326594', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '10:35998046', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '11:116155555', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '11:44391664', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '11:6347083', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '11:76143472', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '11:79263850', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '12:106642390', expecting 'c/g' found 'a/c'
+## WARNING: Bad alleles for marker '12:117803161', expecting 'a/g' found 'c/g'
+## WARNING: Bad alleles for marker '12:133065711', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '13:111509036', expecting 'a/c' found 'c/g'
+## WARNING: Bad alleles for marker '13:113504413', expecting 'a/c' found 'c/g'
+## WARNING: Bad alleles for marker '13:89058104', expecting 'a/c' found 'c/g'
+## WARNING: Bad alleles for marker '13:93503930', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '14:32836522', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '15:56071325', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '15:64789992', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '16:81144488', expecting 'a/c' found 'a/g'
+## WARNING: Allele names don't match previous occurences at 17 additional markers
+## Processed 5390111 markers ...
+
+###########################################################################
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz'
+## WARNING: Bad alleles for marker '10:125338315', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '10:3326594', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '10:35998046', expecting 'c/g' found 'a/g'
+## WARNING: Bad alleles for marker '11:116155555', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '11:20289595', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '11:44391664', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '11:6347083', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '11:76143472', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '11:79263850', expecting 'a/t' found 'a/g'
+## WARNING: Bad alleles for marker '12:106642390', expecting 'c/g' found 'a/c'
+## WARNING: Bad alleles for marker '12:25096701', expecting 'a/g' found 'a/c'
+## WARNING: Bad alleles for marker '13:111509036', expecting 'a/c' found 'c/g'
+## WARNING: Bad alleles for marker '13:113504413', expecting 'a/c' found 'c/g'
+## WARNING: Bad alleles for marker '13:89058104', expecting 'a/c' found 'c/g'
+## WARNING: Bad alleles for marker '14:32836522', expecting 'a/t' found 'a/c'
+## WARNING: Bad alleles for marker '15:56071325', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '15:64789992', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '15:89878377', expecting 'a/c' found 'a/t'
+## WARNING: Bad alleles for marker '16:81144488', expecting 'a/c' found 'a/g'
+## WARNING: Bad alleles for marker '17:72351761', expecting 'a/c' found 'a/g'
+## WARNING: Allele names don't match previous occurences at 12 additional markers
+## Processed 4984397 markers ...
+
+## Set output file prefix and suffix to maths_gwas. and tbl ...
+###########################################################################
+## Running second pass analysis to evaluate heterogeneity...
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NCDS/CLEANED.NCDS_COMBINED_20250410.txt.gz'
+
+###########################################################################
+## Calculating tau-square...
+###########################################################################
+## Third pass to calculate DerSimonian-Laird statistics...
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TEDS/CLEANED.TEDS_COMBINED_20230103_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/GEN3/CLEANED.GenR3_full_9-5_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.MarWur_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Munich_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NEURODYS/CLEANED.Austria_assoc_all_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/YORK/CLEANED.OMA_OMS_results_LOCO.rsid.EasyQC_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/TORONTO/CLEANED.Toronto_EUR_Math_Z_COMBINED_20211223_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/IOWA/CLEANED.IOWA_COMBINED_20220228.tsv_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/FIOLA/CLEANED.FIOLA_MATH_COMBINED_20211112_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/ALSPAC/CLEANED.sumstats.k3_pap1m_z_age_adj.rsid.EasyQC_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/RAINE/CLEANED.RaineStudy_ALL_20240125_with_HGVS_CHROM_ALLELE_p5.txt.gz'
+## Processing file '/home/kmarians/scratch/private/maths_gwas/NCDS/CLEANED.NCDS_COMBINED_20250410.txt.gz'
+
+###########################################################################
+## Executing meta-analysis ...
+## Complete results will be stored in file 'maths_gwas.1tbl'
+## Column descriptions will be stored in file 'maths_gwas.1tbl.info'
+## Completed meta-analysis for 8187043 markers!
+## Smallest p-value is 1.47e-07 at marker '18:35641940'
+
+## Clearing all stored statistics ...
+# Clearing user defined filters ...
